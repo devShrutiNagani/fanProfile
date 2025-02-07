@@ -1,5 +1,3 @@
-import {DriverDetailsScreenNavigationProp} from 'constant/interface/Navigation';
-import {UserDetailsField} from 'constant/interface/screen/DriverDetailsScreen';
 import React, {useContext, useEffect, useState} from 'react';
 import {Image, SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 import CommonStyle from '../../CommonStyle';
@@ -22,12 +20,16 @@ import {
 import DataContext from '../../context/DataContext';
 import {getDriverDetails} from '../../service/DriverDataService';
 import createStyles from './Styles';
+import {DriverDetailsScreenNavigationProp} from '../../constant/interface/Navigation';
+import {UserDetailsField} from '../../constant/interface/screen/DriverDetailsScreen';
 
 const DriverDetailsScreen: React.FC<DriverDetailsScreenNavigationProp> = ({
   route,
   navigation,
 }) => {
   const {userData, handleLinkPress} = useContext(DataContext);
+  console.log('route', route);
+
   const {driverID} = route?.params;
   const [driverDetails, setDriverDetails] = useState<UserDetailsField>();
   const [isLoading, setIsLoading] = useState(false);
@@ -36,6 +38,7 @@ const DriverDetailsScreen: React.FC<DriverDetailsScreenNavigationProp> = ({
 
   useEffect(() => {
     fetchDriverData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchDriverData = async () => {

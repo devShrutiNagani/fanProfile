@@ -1,8 +1,8 @@
-import {COLORS} from 'constant/Colors';
 import React from 'react';
 import {Image, Text, TextInput, View} from 'react-native';
 import createStyles from './Styles';
-import {CustomInputProps} from 'constant/interface/custom/Custom';
+import {COLORS} from '../../constant/Colors';
+import {CustomInputProps} from '../../constant/interface/custom/Custom';
 
 const CustomInput: React.FC<CustomInputProps> = ({
   label,

@@ -1,7 +1,7 @@
-import {COLORS} from 'constant/Colors';
 import {StyleSheet} from 'react-native';
 import {RFValue} from 'react-native-responsive-fontsize';
 import CommonStyle from '../../CommonStyle';
+import {COLORS} from '../../constant/Colors';
 
 const createStyles = () => {
   const commonStyles = CommonStyle();

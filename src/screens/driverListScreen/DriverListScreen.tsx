@@ -1,5 +1,3 @@
-import {DriverDataListScreenNavigationProp} from 'constant/interface/Navigation';
-import {Driver} from 'constant/interface/screen/DriverDataScreen';
 import React, {useContext, useEffect, useState} from 'react';
 import {
   FlatList,
@@ -29,6 +27,8 @@ import {
 } from '../../constant/TitleText';
 import {getDriverData} from '../../service/DriverDataService';
 import createStyles from './Styles';
+import {Driver} from '../../constant/interface/screen/DriverDataScreen';
+import {DriverDataListScreenNavigationProp} from '../../constant/interface/Navigation';
 
 const DriverListScreen: React.FC<DriverDataListScreenNavigationProp> = ({
   navigation,

@@ -1,9 +1,3 @@
-// UserDataScreen.tsx
-import {COLORS} from 'constant/Colors';
-import {IMAGES} from 'constant/Images';
-import {UserDataScreenNavigationProp} from 'constant/interface/Navigation';
-import {Error, UserField} from 'constant/interface/screen/UserDataScreen';
-import {staticUserData} from 'constant/json/UserData';
 import React, {useContext, useState} from 'react';
 import {FlatList, Image, View} from 'react-native';
 import CustomButton from '../../components/button/CustomButton';
@@ -13,6 +7,11 @@ import {SCREENS} from '../../constant/ScreensName';
 import {ValidationSchema} from '../../constant/ValidationSchema';
 import DataContext from '../../context/DataContext';
 import createStyles from './Styles';
+import {IMAGES} from '../../constant/Images';
+import {COLORS} from '../../constant/Colors';
+import {UserDataScreenNavigationProp} from '../../constant/interface/Navigation';
+import {Error, UserField} from '../../constant/interface/screen/UserDataScreen';
+import {staticUserData} from '../../constant/json/UserData';
 
 const UserDataScreen: React.FC<UserDataScreenNavigationProp> = ({
   navigation,

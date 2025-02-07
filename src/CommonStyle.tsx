@@ -1,7 +1,7 @@
-import {COLORS} from 'constant/Colors';
 import {StatusBar, StyleSheet, TextStyle} from 'react-native';
 import {RFValue} from 'react-native-responsive-fontsize';
 import {FONTS} from './constant/Fonts';
+import {COLORS} from './constant/Colors';
 
 // Create the type for the return value of createFontStyles
 interface FontStyles {

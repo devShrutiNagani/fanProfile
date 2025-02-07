@@ -1,8 +1,8 @@
 import React from 'react';
 import {ActivityIndicator, Text, TouchableOpacity} from 'react-native';
 import createStyles from './Styles';
-import {COLORS} from 'constant/Colors';
-import {CustomButtonProps} from 'constant/interface/custom/Custom';
+import {CustomButtonProps} from '../../constant/interface/custom/Custom';
+import {COLORS} from '../../constant/Colors';
 
 const CustomButton: React.FC<CustomButtonProps> = ({
   title,

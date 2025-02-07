@@ -1,8 +1,8 @@
-import {CustomHeaderProps} from 'constant/interface/custom/Custom';
 import React from 'react';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import {RFValue} from 'react-native-responsive-fontsize';
 import createStyles from './Styles';
+import {CustomHeaderProps} from '../../constant/interface/custom/Custom';
 
 const CustomHeader: React.FC<CustomHeaderProps> = ({
   firstIcon,

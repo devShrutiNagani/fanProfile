@@ -1,8 +1,8 @@
-import {COLORS} from 'constant/Colors';
 import React from 'react';
 import {ActivityIndicator, View} from 'react-native';
 import createStyles from './Styles';
-import {SpinnerLoaderProps} from 'constant/interface/custom/Custom';
+import {SpinnerLoaderProps} from '../../constant/interface/custom/Custom';
+import {COLORS} from '../../constant/Colors';
 
 const SpinnerLoader: React.FC<SpinnerLoaderProps> = ({
   size = 'large',

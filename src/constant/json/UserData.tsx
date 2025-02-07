@@ -1,4 +1,4 @@
-import {ICONS} from 'constant/Images';
+import {ICONS} from '../Images';
 
 export const staticUserData = [
   {
