@@ -7,6 +7,6 @@ export const ICONS = {
 
 export const IMAGES = {
   noData: require('../assets/images/noData.png'),
-  driver: require('../assets/images/driver.jpg'),
+  driver: require('../assets/images/driver.jpeg'),
   userDataImg: require('../assets/images/userDataImg.jpg'),
 };
