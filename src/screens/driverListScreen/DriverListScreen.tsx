@@ -71,7 +71,7 @@ const DriverListScreen: React.FC<DriverDataListScreenNavigationProp> = ({
           styles.dataContainer,
           {
             borderColor: isSelected ? COLORS.theme : COLORS.white,
-            marginTop: index === 0 ? RFValue(15) : 0,
+            marginTop: index === 0 && RFValue(15),
           },
         ]}
         onPress={() => handleDriverSelect(item)}
@@ -92,6 +92,7 @@ const DriverListScreen: React.FC<DriverDataListScreenNavigationProp> = ({
         <DetailsComponent title={CODE} data={item?.code} />
         <TouchableOpacity
           style={styles.linkPress}
+          testID={`link-press-${item.driverId}`}
           onPress={() => {
             handleLinkPress(item?.url);
           }}>

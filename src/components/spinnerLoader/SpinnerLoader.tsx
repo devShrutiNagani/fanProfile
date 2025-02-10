@@ -12,7 +12,11 @@ const SpinnerLoader: React.FC<SpinnerLoaderProps> = ({
   const styles = createStyles();
   return (
     <View style={[styles.container, style]}>
-      <ActivityIndicator size={size} color={color || COLORS.theme} />
+      <ActivityIndicator
+        size={size}
+        color={color || COLORS.theme}
+        testID="spinner-loader"
+      />
     </View>
   );
 };

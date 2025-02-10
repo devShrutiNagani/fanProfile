@@ -41,6 +41,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
             <>
               <View style={styles.firstIconView}>
                 <Image
+                  testID="first-icon"
                   style={[styles.firstIcon, firstIconStyle]}
                   source={firstIcon}
                   tintColor={isTintColor ? isTintColor : COLORS.black}

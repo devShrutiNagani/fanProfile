@@ -86,7 +86,7 @@ const DriverDetailsScreen: React.FC<DriverDetailsScreenNavigationProp> = ({
         </View>
       </View>
       {isLoading ? (
-        <View style={styles.loaderView}>
+        <View style={styles.loaderView} testID="spinner-loader">
           <SpinnerLoader size={'large'} color={COLORS.theme} />
         </View>
       ) : (
@@ -138,6 +138,7 @@ const DriverDetailsScreen: React.FC<DriverDetailsScreenNavigationProp> = ({
             />
             <TouchableOpacity
               style={styles.linkPress}
+              testID="link-button"
               onPress={() => {
                 const url = driverDetails?.Constructors[0]?.url || '';
                 handleLinkPress(url);

@@ -13,7 +13,7 @@ export interface CustomInputProps {
   label?: string;
   labelStyle?: StyleProp<TextStyle>;
   value?: string;
-  onChangeText: (text: string) => void;
+  onChangeText?: (text: string) => void;
   placeholderTextColor?: string;
   firstIcon?: ImageSourcePropType;
   firstIconStyle?: StyleProp<ImageStyle>;
@@ -35,7 +35,7 @@ export interface CustomInputProps {
 
 export interface CustomButtonProps {
   title: string;
-  onPress: () => void;
+  onPress?: () => void;
   variant?: string;
   style?: StyleProp<ViewStyle>;
   titleStyle?: StyleProp<TextStyle>;
@@ -45,11 +45,11 @@ export interface CustomButtonProps {
 
 export interface NoDataProps {
   containerStyle?: ViewStyle;
-  image: ImageSourcePropType;
+  image?: ImageSourcePropType;
   imageStyle?: ImageStyle;
-  title: string;
+  title?: string;
   titleStyle?: TextStyle;
-  message: string;
+  message?: string;
   messageStyle?: TextStyle;
 }
 

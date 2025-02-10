@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsComponent matches the snapshot 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "marginBottom": 4,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#1D1D1D",
+        "fontFamily": "Montserrat-SemiBold",
+        "fontSize": 24,
+        "includeFontPadding": false,
+      }
+    }
+  >
+    Snapshot Title
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#1D1D1D",
+        "fontFamily": "Montserrat-Regular",
+        "fontSize": 24,
+        "includeFontPadding": false,
+      }
+    }
+  >
+    Snapshot Data
+  </Text>
+</View>
+`;

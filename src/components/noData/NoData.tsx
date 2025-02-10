@@ -1,7 +1,7 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
 import createStyles from './Styles';
-import {NoDataProps} from 'constant/interface/custom/Custom';
+import {NoDataProps} from '../../constant/interface/custom/Custom';
 
 const NoData: React.FC<NoDataProps> = ({
   containerStyle,
@@ -16,7 +16,11 @@ const NoData: React.FC<NoDataProps> = ({
 
   return (
     <View style={[styles.container, containerStyle]}>
-      <Image style={[styles.image, imageStyle]} source={image} />
+      <Image
+        style={[styles.image, imageStyle]}
+        source={image}
+        testID="no-data-image"
+      />
       <View style={styles.textView}>
         <Text style={[styles.title, titleStyle]}>{title}</Text>
         <Text style={[styles.message, messageStyle]}>{message}</Text>

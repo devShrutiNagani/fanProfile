@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomHeader Component matches snapshot 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "flexDirection": "row",
+      "marginVertical": 20,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "flex-start",
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": 59,
+      }
+    }
+    testID="back-button"
+  >
+    <Image
+      source={
+        {
+          "uri": "test-icon",
+        }
+      }
+      style={
+        [
+          {
+            "height": 39,
+            "resizeMode": "contain",
+            "tintColor": "#1D1D1D",
+            "width": 39,
+          },
+          undefined,
+        ]
+      }
+      testID="first-icon"
+    />
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#1D1D1D",
+            "fontFamily": "Montserrat-Medium",
+            "fontSize": 35,
+            "includeFontPadding": false,
+          },
+          undefined,
+          {
+            "marginRight": 59,
+          },
+        ]
+      }
+    >
+      Snapshot Header
+    </Text>
+  </View>
+</View>
+`;

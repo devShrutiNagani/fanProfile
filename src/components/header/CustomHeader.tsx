@@ -16,8 +16,12 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({
   return (
     <View style={styles.container}>
       {firstIcon && (
-        <TouchableOpacity onPress={backPress} style={styles.firstIconContainer}>
+        <TouchableOpacity
+          onPress={backPress}
+          style={styles.firstIconContainer}
+          testID="back-button">
           <Image
+            testID="first-icon"
             style={[styles.firstIcon, firstIconStyle]}
             source={firstIcon}
           />

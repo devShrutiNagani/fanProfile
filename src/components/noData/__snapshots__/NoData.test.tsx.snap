@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoData Component matches snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    source={
+      {
+        "uri": "test-image",
+      }
+    }
+    style={
+      [
+        {
+          "height": 294,
+          "resizeMode": "contain",
+          "width": 589,
+        },
+        undefined,
+      ]
+    }
+    testID="no-data-image"
+  />
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "marginHorizontal": 39,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#1D1D1D",
+            "fontFamily": "Montserrat-SemiBold",
+            "fontSize": 27,
+            "includeFontPadding": false,
+            "textAlign": "center",
+          },
+          undefined,
+        ]
+      }
+    >
+      Snapshot Title
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#1D1D1D",
+            "fontFamily": "Montserrat-Regular",
+            "fontSize": 24,
+            "includeFontPadding": false,
+            "marginTop": 10,
+            "textAlign": "center",
+          },
+          undefined,
+        ]
+      }
+    >
+      Snapshot Message
+    </Text>
+  </View>
+</View>
+`;

@@ -70,7 +70,11 @@ const UserDataScreen: React.FC<UserDataScreenNavigationProp> = ({
   return (
     <View style={styles.container}>
       <View style={styles.safeAreaView}>
-        <Image source={IMAGES.userDataImg} style={styles.userImage} />
+        <Image
+          source={IMAGES.userDataImg}
+          style={styles.userImage}
+          testID="user-image"
+        />
       </View>
       <View style={styles.flatListContainer}>
         <View style={styles.flatListSubContainer}>

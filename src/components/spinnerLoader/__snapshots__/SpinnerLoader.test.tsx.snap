@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpinnerLoader Component matches snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <ActivityIndicator
+    color="blue"
+    size="small"
+    testID="spinner-loader"
+  />
+</View>
+`;

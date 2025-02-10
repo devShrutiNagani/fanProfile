@@ -3,6 +3,7 @@
 import React, {createContext, useState, ReactNode} from 'react';
 import {Alert, Linking} from 'react-native';
 import {DataContextType} from '../constant/interface/DataContext';
+import {OPEN_URLS} from '../constant/TitleText';
 
 const defaultContext: DataContextType = {
   userData: {name: '', email: ''},
@@ -27,7 +28,7 @@ export const DataProvider: React.FC<DataProviderProps> = ({children}) => {
     if (supported) {
       await Linking.openURL(url);
     } else {
-      Alert.alert(`${`Don't know how to open this URL`} : ${url}`);
+      Alert.alert(`${OPEN_URLS} : ${url}`);
     }
   };
 
